@@ -19,6 +19,7 @@
 | ----------- | ---------- | ------------------------------ |
 | place_name  | string     | null: false, unique: true      |
 | region_id   | integer    | null: false                    |
+| city_id     | integer    | null: false                    |
 | category_id | integer    | null: false                    |
 | user        | references | null: false, foreign_key: true |
 
