@@ -25,7 +25,7 @@
 <!-- Association -->
 
 - belongs_to :user
-- has_many :favorite, dependent: :destroy
+- has_many :favorites, dependent: :destroy
 
 <!-- favorites テーブル -->
 
@@ -37,4 +37,4 @@
 <!-- Association -->
 
 - belongs_to : user
-- belongs_to : recommends
+- belongs_to : recommend
