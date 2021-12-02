@@ -1,24 +1,40 @@
-# README
+<!-- テーブル設計 -->
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!-- users テーブル -->
 
-Things you may want to cover:
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| emile              | string | null: false, unique: true |
+| encrypted_password | string | null: false,              |
 
-* Ruby version
+<!-- Association -->
 
-* System dependencies
+- has_many :recommends
+- has_many :favorites, dependent: :destroy
 
-* Configuration
+<!-- recommends テーブル -->
 
-* Database creation
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| place_name  | string     | null: false, unique: true      |
+| region_id   | integer    | null: false                    |
+| category_id | integer    | null: false                    |
+| user        | references | null: false, foreign_key: true |
 
-* Database initialization
+<!-- Association -->
 
-* How to run the test suite
+- belongs_to :user
+- has_many :favorites, dependent: :destroy
 
-* Services (job queues, cache servers, search engines, etc.)
+<!-- favorites テーブル -->
 
-* Deployment instructions
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| user      | references | null: false, foreign_key: true |
+| recommend | references | null: false, foreign_key: true |
 
-* ...
+<!-- Association -->
+
+- belongs_to : user
+- belongs_to : recommend
