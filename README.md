@@ -17,7 +17,7 @@
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | ------------------------------ |
-| price_name  | string     | null: false, unique: true      |
+| place_name  | string     | null: false, unique: true      |
 | region_id   | integer    | null: false                    |
 | category_id | integer    | null: false                    |
 | user        | references | null: false, foreign_key: true |
@@ -29,10 +29,10 @@
 
 <!-- favorites テーブル -->
 
-| Column    | Type       | Options                       |
-| --------- | ---------- | ----------------------------- |
-| user      | references | null: false, foreign_key: true|
-| recommend | references | null: false, foreign_key: true|
+| Column    | Type       | Options                        |
+| --------- | ---------- | ------------------------------ |
+| user      | references | null: false, foreign_key: true |
+| recommend | references | null: false, foreign_key: true |
 
 <!-- Association -->
 
