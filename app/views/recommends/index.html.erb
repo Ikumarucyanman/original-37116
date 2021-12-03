@@ -1,0 +1,13 @@
+<div class="contents row">
+  <div >
+    <% @recommends.each do |recommend| %>
+      <p><%= recommend.place_name %></p>
+      <span class="region_name" >
+        <%= recommend.region.name %>
+      </span>
+      <span class="category_name">
+        <%= recommend.category.name %>
+      </span>
+    <% end %>
+  </div>
+</div>
