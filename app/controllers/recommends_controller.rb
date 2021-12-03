@@ -4,4 +4,8 @@ class RecommendsController < ApplicationController
     @recommends = Recommend.all
   end
 
+  def new
+    @recommend = Recommend.new
+  end
+
 end
