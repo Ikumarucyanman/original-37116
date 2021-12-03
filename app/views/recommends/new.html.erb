@@ -2,7 +2,7 @@
   <div class="container">
     <h3>Newpost</h3>
     <%= form_with(model: @recommend, local: true) do |f| %>
-      <%= f.file_field :image, id:"item-image" %>
+      <%= f.file_field :image, id:"recommend-image" %>
       <%= f.text_area :place_name, class:"place-name-text", id:"place-name", placeholder: "場所-place_name-" %>
       <%= f.collection_select(:region_id, Region.all, :id, :name, {}, {class:"select-box", id:"recommend-region"}) %>
       <%= f.collection_select(:city_id, City.all, :id, :name, {}, {class:"select-box", id:"recommend-city"}) %>
