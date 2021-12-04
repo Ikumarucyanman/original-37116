@@ -1,6 +1,6 @@
 class City < ActiveHash::Base
   self.data = [
-    { id: 1, name: '-------------------' },
+    { id: 1, name: '選択してください-Please select-' },
     { id: 2, name: '今治市-Imabari-' },
     { id: 3, name: '新居浜市-Niihama-' },
     { id: 4, name: '西条市-Saijo-' },

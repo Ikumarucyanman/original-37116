@@ -638,7 +638,7 @@ ul li {
 body,
 html {
   height: 100%;
-  background-color: #edeff1;
+  background-color: #e5e9f0;
 }
 
 body {
@@ -1012,7 +1012,7 @@ form input,
 form textarea {
   width: 100%;
   margin: 5px 0 15px;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
@@ -1031,7 +1031,7 @@ form input[type="submit"]:hover {
 }
 
 .container {
-  margin: 20px 0;
+  margin: 20px 25%;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: white;
@@ -1042,8 +1042,8 @@ form input[type="submit"]:hover {
   margin: 0 0 20px;
   text-align: center;
   font-weight: normal;
-  font-size: 20px;
-  color: #666;
+  font-size: 25px;
+  color: #a4c6ff;
 }
 
 .comments {
@@ -1063,6 +1063,7 @@ footer {
   margin: 30px auto;
   padding: 10px;
   color: #b283ce;
+  background-color: #fff;
 }
 
 footer p {
@@ -1081,4 +1082,16 @@ footer p {
 
 .search-form .search-btn {
   width: 10%;
+}
+
+.place-name-text::placeholder {
+  font-size: 20px;
+}
+
+.select-box {
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #d8d8d8;
+  color: #858383;
+  margin: 5px 0 15px;
 }
