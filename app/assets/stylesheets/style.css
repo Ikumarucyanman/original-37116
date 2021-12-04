@@ -771,7 +771,7 @@ header.header div.header__bar.row div.grid-6 {
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
-  width: 120px;
+  width: 110px;
   display: inline-left;
   margin-left: 10px;
 }
@@ -786,10 +786,10 @@ header.header .user_nav span {
   top: 5px;
   display: block;
   float: left;
-  margin-left: 30px;
+  color: #6e4a8b;
   width: 150px;
   height: 50px;
-  font-size: 1em;
+  font-size: 1.2em;
   cursor: pointer;
   position: relative;
 }

@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
 
-  # has_many :recommends
+  has_many :recommends
   
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
