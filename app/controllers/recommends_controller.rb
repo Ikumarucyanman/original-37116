@@ -20,7 +20,7 @@ class RecommendsController < ApplicationController
   private
 
   def recommend_params
-    params.require(:recommend).permit(:image, :place_name, :region_id, :city_id, :category_id)
+    params.require(:recommend).permit(:image, :place_name, :region_id, :city_id, :category_id).merge(user_id: current_user.id)
   end
 
 end

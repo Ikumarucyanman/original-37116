@@ -2,6 +2,9 @@
   <div >
     <% @recommends.each do |recommend| %>
       <p><%= recommend.place_name %></p>
+      <span>
+      <%= image_tag recommend.image, class: "recommend-img" %>
+      </span>
       <span class="region_name" >
         <%= recommend.region.name %>
       </span>
