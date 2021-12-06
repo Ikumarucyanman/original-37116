@@ -466,9 +466,9 @@ ul li {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: auto;
   margin-bottom: 0;
-  max-width: 80%;
+  max-width: 95%;
   *zoom: 1;
 }
 
@@ -653,7 +653,7 @@ h5,
 h6,
 body {
   line-height: 1.57;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   font-size: 16px;
   color: #666;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
@@ -705,8 +705,8 @@ form input[type="submit"] {
 
 .btn,
 header.header div.header__bar.row div.grid-6 a.post {
-  padding: 6px 15px;
-  font-size: 12px;
+  padding: 5px 6px;
+  font-size: 15px;
   border: 2px solid #e0ffff;
   color: #a4c6ff;
   background-color: white;
@@ -745,7 +745,8 @@ header.header {
   left: 0;
   right: 0;
   z-index: 5;
-  height: 70px;
+  max-height: 95px;
+  min-height: 70px;
 }
 
 header.header div.header__bar.row {
@@ -753,7 +754,7 @@ header.header div.header__bar.row {
 }
 
 header.header div.header__bar.row h1.grid-6 {
-  font-size: 19px;
+  font-size: 26px;
   line-height: 39px;
   float: left;
 }
@@ -766,10 +767,11 @@ header.header div.header__bar.row h1.grid-6 a {
 header.header div.header__bar.row div.grid-6 {
   float: right;
   text-align: right;
+  overflow: hidden;
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
-  width: 120px;
+  width: 110px;
   display: inline-left;
   margin-left: 10px;
 }
@@ -784,10 +786,10 @@ header.header .user_nav span {
   top: 5px;
   display: block;
   float: left;
-  margin-left: 30px;
+  color: #6e4a8b;
   width: 150px;
   height: 50px;
-  font-size: 1em;
+  font-size: 1.2em;
   cursor: pointer;
   position: relative;
 }
@@ -1060,7 +1062,7 @@ form input[type="submit"]:hover {
 }
 
 footer {
-  margin: 30px auto;
+  margin: 50px auto;
   padding: 10px;
   color: #b283ce;
   background-color: #fff;
@@ -1092,6 +1094,7 @@ footer p {
   font-size: 20px;
   padding: 5px;
   border: 1px solid #d8d8d8;
-  color: #858383;
+  color: #695959;
   margin: 5px 0 15px;
 }
+

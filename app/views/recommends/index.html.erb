@@ -1,11 +1,16 @@
 <div class="contents row">
   <div >
     <% @recommends.each do |recommend| %>
-      <p><%= recommend.place_name %></p>
-      <span class="region_name" >
+      <span class="recommend_image">
+        <%= image_tag recommend.image, class: "recommend-img" %>
+      </span>
+      <span class="recommend_place_name" >
+        <%= recommend.place_name %>
+      </span>
+      <span class="recommend_region_name" >
         <%= recommend.region.name %>
       </span>
-      <span class="category_name">
+      <span class="recommend_category_name">
         <%= recommend.category.name %>
       </span>
     <% end %>
