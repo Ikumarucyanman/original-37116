@@ -1,6 +1,6 @@
 class RecommendsController < ApplicationController
   before_action :authenticate_user!, only: :new
-  
+  before_action :set_recommend, only: [:show, :destroy]
   def index
     @recommends = Recommend.all.order(created_at: :DESC)
   end
@@ -19,11 +19,9 @@ class RecommendsController < ApplicationController
   end
 
   def show
-    @recommend = Recommend.find(params[:id])
   end
 
   def destroy
-    @recommend = Recommend.find(params[:id])
     if @recommend.destroy
       redirect_to root_path
     end
@@ -33,6 +31,10 @@ class RecommendsController < ApplicationController
 
   def recommend_params
     params.require(:recommend).permit(:image, :place_name, :region_id, :city_id, :category_id).merge(user_id: current_user.id)
+  end
+
+  def set_recommend
+    @recommend = Recommend.find(params[:id])
   end
 
 end
