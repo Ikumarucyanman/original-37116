@@ -1,6 +1,7 @@
 class RecommendsController < ApplicationController
   before_action :authenticate_user!, only: :new
   before_action :set_recommend, only: [:show, :destroy]
+  
   def index
     @recommends = Recommend.all.order(created_at: :DESC)
   end
