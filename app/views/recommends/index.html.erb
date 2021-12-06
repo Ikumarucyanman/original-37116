@@ -4,6 +4,11 @@
       <span class="recommend_image">
         <%= image_tag recommend.image, class: "recommend-img" %>
       </span>
+      <ul class="more_list">
+        <li>
+          <%= link_to '詳細', recommend_path(recommend.id), method: :get %>
+        </li>
+      </ul>
       <span class="recommend_place_name" >
         <%= recommend.place_name %>
       </span>
