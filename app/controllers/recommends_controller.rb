@@ -1,5 +1,6 @@
 class RecommendsController < ApplicationController
-
+  before_action :authenticate_user!, only: :new
+  
   def index
     @recommends = Recommend.all.order(created_at: :DESC)
   end
@@ -19,6 +20,13 @@ class RecommendsController < ApplicationController
 
   def show
     @recommend = Recommend.find(params[:id])
+  end
+
+  def destroy
+    @recommend = Recommend.find(params[:id])
+    if @recommend.destroy
+      redirect_to root_path
+    end
   end
 
   private
