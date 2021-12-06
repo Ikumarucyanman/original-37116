@@ -1,0 +1,9 @@
+<div class="contents row">
+    <div class="more">
+      <span><%= image_tag @recommend.image, class: "recommend-img" %></span>
+    </div>
+    <span class="name"><%= @recommend.place_name %></span>
+    <p><%= @recommend.region.name %></p>
+    <p><%= @recommend.city.name %></P>
+    <p><%= @recommend.category.name %></p>
+</div>

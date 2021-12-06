@@ -17,6 +17,10 @@ class RecommendsController < ApplicationController
     end
   end
 
+  def show
+    @recommend = Recommend.find(params[:id])
+  end
+
   private
 
   def recommend_params
