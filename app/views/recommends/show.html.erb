@@ -1,18 +1,22 @@
-<div class="contents row">
+<div class="recommend-wide">
+  <div class="show-contents-row">
     <div class="more">
+      <div class="place-name">
+        場所：<%= @recommend.place_name %>
+      </div>
       <span><%= image_tag @recommend.image, class: "recommend-img" %></span>
     </div>
-    <% if user_signed_in? %>
-      <% if current_user.id == @recommend.user_id %>
-        <ul class="more_list">
-          <li>
-            <%= link_to '削除', recommend_path(@recommend.id), method: :delete %>
-          </li>
-        </ul>
-      <% end %>
+    <p class="name">•地方：<%= @recommend.region.name %></p>
+    <p class="name">•市町村：<%= @recommend.city.name %></p>
+    <p class="name">•カテゴリー：<%= @recommend.category.name %></p>
+  </div>
+  <% if user_signed_in? %>
+    <% if current_user.id == @recommend.user_id %>
+      <ul class="more-list">
+        <li class="list-contents">
+          <%= link_to '投稿を削除しますか？-Do you want to delete this post?-', recommend_path(@recommend.id), method: :delete %>
+        </li>
+      </ul>
     <% end %>
-    <span class="name"><%= @recommend.place_name %></span>
-    <p><%= @recommend.region.name %></p>
-    <p><%= @recommend.city.name %></P>
-    <p><%= @recommend.category.name %></p>
+  <% end %>
 </div>

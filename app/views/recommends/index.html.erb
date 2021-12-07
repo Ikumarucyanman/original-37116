@@ -1,23 +1,21 @@
-<div class="contents row">
-  <div >
+<div class="recommend-wide">
+  <div class="contents-row">
     <% @recommends.each do |recommend| %>
-      <span class="recommend_image">
-        <%= image_tag recommend.image, class: "recommend-img" %>
-      </span>
-      <ul class="more_list">
-        <li>
-          <%= link_to '詳細', recommend_path(recommend.id), method: :get %>
-        </li>
-      </ul>
-      <span class="recommend_place_name" >
-        <%= recommend.place_name %>
-      </span>
-      <span class="recommend_region_name" >
-        <%= recommend.region.name %>
-      </span>
-      <span class="recommend_category_name">
-        <%= recommend.category.name %>
-      </span>
+      <div class='recommend-list'>
+      <%= link_to recommend_path(recommend.id) do %>
+        <div class='recommend-img-content'>
+          <%= image_tag recommend.image.variant(resize: '380x380'), class: "recommend-img" %>
+        </div>
+        <div class='recommend-info'>
+          <p class='name'>
+            場所：<%= recommend.place_name %>
+          </p>
+          <p class='name'>
+            カテゴリー：<%= recommend.category.name %>
+          </p>
+        </div>
+      </div>
+      <% end %>
     <% end %>
   </div>
 </div>

@@ -4,9 +4,13 @@
     <%= form_with model: @recommend, local: true do |f| %>
     <%= render 'shared/error_messages', model: f.object %>
       <%= f.file_field :image, id:"recommend-image" %>
+      場所名
       <%= f.text_area :place_name, class:"place-name-text", id:"place-name", placeholder: "Write the place name" %>
+      地方名
       <%= f.collection_select(:region_id, Region.all, :id, :name, {}, {class:"select-box", id:"recommend-region"}) %>
+      市町村
       <%= f.collection_select(:city_id, City.all, :id, :name, {}, {class:"select-box", id:"recommend-city"}) %>
+      カテゴリー
       <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"recommend-category"}) %>
       <%= f.submit "送信-SEND-", class:"recommend-btn" %>
     <% end %>
