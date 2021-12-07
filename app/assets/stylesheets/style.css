@@ -1098,3 +1098,42 @@ footer p {
   margin: 5px 0 15px;
 }
 
+.recommend-wide {
+  margin: 20px 30px 0 30px;
+  background-color: rgb(248, 247, 242);
+}
+
+.contents-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recommend-list {
+  margin: 30px;
+}
+
+.show-contents-row {
+  margin: 50px;
+}
+
+.more-list {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+}
+
+.place-name {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+  color: #000000;
+  font-size: 35px;
+}
+
+.name {
+  color: #000;
+  font-size: 15px;
+}
