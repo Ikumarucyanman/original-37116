@@ -6,7 +6,7 @@
       <%= f.file_field :image, id:"recommend-image" %>
       場所名
       <%= f.text_area :place_name, class:"place-name-text", id:"place-name", placeholder: "Write the place name" %>
-      地方名
+      地方
       <%= f.collection_select(:region_id, Region.all, :id, :name, {}, {class:"select-box", id:"recommend-region"}) %>
       市町村
       <%= f.collection_select(:city_id, City.all, :id, :name, {}, {class:"select-box", id:"recommend-city"}) %>

@@ -653,7 +653,6 @@ h5,
 h6,
 body {
   line-height: 1.57;
-  letter-spacing: 0.03em;
   font-size: 16px;
   color: #666;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
@@ -716,8 +715,8 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #9bdbf2;
-  color: #9bdbf2;
+  border-color: #41bbe7;
+  color: #2cb9ec;
 }
 
 .title {
@@ -746,7 +745,7 @@ header.header div.header__bar.row h1.grid-6 {
 
 header.header div.header__bar.row h1.grid-6 a {
   display: block;
-  color: #eb802a;
+  color:#f17917;
 }
 
 header.header div.header__bar.row div.grid-6 {
@@ -765,9 +764,8 @@ header.header .user_nav {
   position: relative;
   height: 100px;
   right: 0;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
-
 header.header .user_nav span {
   top: 5px;
   display: block;
@@ -1150,4 +1148,8 @@ footer p {
   background-position: 33% 33%;
   background-size: cover;
   opacity: 0.8;
+}
+
+.header.header div.header__bar.row h1.grid-6 a:hover {
+  color: #ea00ff;
 }
