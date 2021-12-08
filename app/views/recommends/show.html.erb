@@ -5,7 +5,7 @@
         場所：<%= @recommend.place_name %>
       </div>
       <div class="show-recommend">
-        <span><%= image_tag @recommend.image.variant(resize: '700x700'), class: "recommend-img" %></span>
+        <span><%= image_tag @recommend.image.variant(resize: '450x600'), class: "recommend-img" %></span>
         <div class="name-field">
           <p class="name">•地方：<%= @recommend.region.name %></p>
           <p class="name">•市町村：<%= @recommend.city.name %></p>
