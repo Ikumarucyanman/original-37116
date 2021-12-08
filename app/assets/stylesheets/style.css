@@ -1153,3 +1153,14 @@ footer p {
 .header.header div.header__bar.row h1.grid-6 a:hover {
   color: #ea00ff;
 }
+
+.know-text {
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 0 auto;
+  margin-top: 25px;
+  font-size: 19px;
+  text-shadow: 2px 2px 2px rgb(201, 251, 255), 4px 4px 4px rgb(162, 255, 243);
+}
