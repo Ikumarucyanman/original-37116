@@ -653,7 +653,7 @@ h5,
 h6,
 body {
   line-height: 1.57;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   font-size: 16px;
   color: #666;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
@@ -739,14 +739,14 @@ header.header div.header__bar.row {
 }
 
 header.header div.header__bar.row h1.grid-6 {
-  font-size: 26px;
-  line-height: 39px;
+  font-size: 29px;
+  line-height: 42px;
   float: left;
 }
 
 header.header div.header__bar.row h1.grid-6 a {
   display: block;
-  color: #a2ebee;
+  color: #eb802a;
 }
 
 header.header div.header__bar.row div.grid-6 {
@@ -765,6 +765,7 @@ header.header .user_nav {
   position: relative;
   height: 100px;
   right: 0;
+  letter-spacing: 0.03em;
 }
 
 header.header .user_nav span {
