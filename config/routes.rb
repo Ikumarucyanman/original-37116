@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   root to: "recommends#index"
 
   resources :recommends, only: [:index, :new, :create, :show, :destroy]
-  resources :users, only: :show
+
+  resources :users, only: [:show]
+
 end
