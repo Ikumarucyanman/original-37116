@@ -665,7 +665,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(247, 238, 238);
+  color: rgb(215, 250, 255);
 }
 
 a:hover {
@@ -1204,4 +1204,8 @@ footer p {
 
 .search-recommend-info {
   margin: 10px 30px;
+}
+
+.recommend-wide a:hover {
+  color: #84d3ef;
 }
