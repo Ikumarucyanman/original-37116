@@ -2,6 +2,7 @@ class RecommendsController < ApplicationController
   before_action :authenticate_user!, only: :new
   before_action :set_recommend, only: [:show, :destroy]
   before_action :move_to_index, only: :destroy
+  before_action :set_search, only: [:index, :search]
 
   def index
     @recommends = Recommend.all.order(created_at: :DESC)
@@ -29,6 +30,10 @@ class RecommendsController < ApplicationController
     end
   end
 
+  def search
+    @recommends = @search.result
+  end
+
   private
 
   def recommend_params
@@ -43,6 +48,10 @@ class RecommendsController < ApplicationController
     unless current_user.id == @recommend.user_id
       redirect_to root_path
     end
+  end
+
+  def set_search
+    @search = Recommend.ransack(params[:q])
   end
 
 end
