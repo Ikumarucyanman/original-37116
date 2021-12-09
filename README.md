@@ -35,7 +35,7 @@
 
 
 # 実装した機能についての画像や説明
-##
+## [![Image from Gyazo](https://i.gyazo.com/7ac903dd82cce6a9e2ab20a9772ce09e.jpg)](https://gyazo.com/7ac903dd82cce6a9e2ab20a9772ce09e)
 
 # 実装予定の機能
 ### 現在検索機能を実装中。今後は、お気に入り機能を実装し、ユーザーマイページにおすすめスポットを表示できるアプリケーションを開発することにした。
@@ -83,8 +83,10 @@
 - belongs_to : user
 - belongs_to : recommend
 
-# 画面遷移図
+## [![Image from Gyazo](https://i.gyazo.com/fbc331636b9f8fc777d7b6bd6b17c084.png)](https://gyazo.com/fbc331636b9f8fc777d7b6bd6b17c084)
 
+# 画面遷移図
+## [![Image from Gyazo](https://i.gyazo.com/4da11b9753af5f95493c6afabe44750d.png)](https://gyazo.com/4da11b9753af5f95493c6afabe44750d)
 
 # 開発環境
 * フロントエンド：HTML,CSS
