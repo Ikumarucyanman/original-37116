@@ -1,0 +1,18 @@
+<div class="recommend-wide">
+  <div class="search-wide">
+    <% @recommends.each do |recommend| %>
+      <div class='search-recommend-img'>
+        <%= link_to recommend_path(recommend.id) do %>
+          <div class='search-recommend-img'>
+            <%= image_tag recommend.image.variant(resize: '380x380'), class: "recommend-img" %>
+          </div>
+          <div class='search-recommend-info'>
+            <p>
+              場所：<%= recommend.place_name %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

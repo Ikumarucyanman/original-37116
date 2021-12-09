@@ -1,18 +1,20 @@
-<div class="contents row">
-  <div class="container">
-    <h3>New post</h3>
-    <%= form_with model: @recommend, local: true do |f| %>
-    <%= render 'shared/error_messages', model: f.object %>
-      <%= f.file_field :image, id:"recommend-image" %>
-      場所名
-      <%= f.text_area :place_name, class:"place-name-text", id:"place-name", placeholder: "Write the place name" %>
-      地方
-      <%= f.collection_select(:region_id, Region.all, :id, :name, {}, {class:"select-box", id:"recommend-region"}) %>
-      市町村
-      <%= f.collection_select(:city_id, City.all, :id, :name, {}, {class:"select-box", id:"recommend-city"}) %>
-      カテゴリー
-      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"recommend-category"}) %>
-      <%= f.submit "送信-SEND-", class:"recommend-btn" %>
-    <% end %>
+<div class="recommend-wide">
+  <div class="contents row">
+    <div class="container">
+      <h3>New post</h3>
+      <%= form_with model: @recommend, local: true do |f| %>
+      <%= render 'shared/error_messages', model: f.object %>
+        <%= f.file_field :image, id:"recommend-image" %>
+        場所名
+        <%= f.text_area :place_name, class:"place-name-text", id:"place-name", placeholder: "Write the place name" %>
+        地方
+        <%= f.collection_select(:region_id, Region.all, :id, :name, {}, {class:"select-box", id:"recommend-region"}) %>
+        市町村
+        <%= f.collection_select(:city_id, City.all, :id, :name, {}, {class:"select-box", id:"recommend-city"}) %>
+        カテゴリー
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"recommend-category"}) %>
+        <%= f.submit "送信-SEND-", class:"recommend-btn" %>
+      <% end %>
+    </div>
   </div>
 </div>
